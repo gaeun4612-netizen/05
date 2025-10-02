@@ -5,15 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x;
+	int sum=0;
+	int a;
+	int b;
 	
-	printf("정수 하나를 입력하세요 : ");
-	scanf("%d", &x);
+	printf("input a number : ");
+	scanf("%d", &b);
 	
-	if (x < 0)
-	  printf("%d\n",-x);
-	else
-	  printf("%d",x);
-  
+	for (a=1 ; a!=b+1 ; a+=1)
+	  sum+=a;
+	
+	printf("The result is %d" , sum);
+	  
 	return 0;
 }
